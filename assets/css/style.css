@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+    'header-area header-area'
+    'sidebar-area main-area' 
+    'footer-area footer-area';
+}
+
+.layout-header {
+    grid-area: header-area;
+    height: 8vh;
+    background-color: black;
+    font-family: sans-serif;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-sidebar {
+    grid-area: sidebar-area;
+    height: 105vh;
+    background-color: white;
+    border: 1px solid;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    font-family: sans-serif;
+}
+.btn {
+    display: flex;
+    font-family: Verdana, Tahoma, sans-serif;
+    border-radius: 10px;
+    margin: 3px ;
+    padding: 0.5em;
+    color: black;
+    background-color: white;
+    text-align: start;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #283048;
+    background: -webkit-linear-gradient(to right, #859398, #283048); 
+    background: linear-gradient(to right, #859398, #283048); 
+}
+
+.btn:focus {
+    background: #1f4037; 
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+.stock {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5em;
+    list-style: none;
+}
+
+.layout-main {
+    grid-area: main-area;
+    height: 105vh;
+    background-color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 2.5px;
+    border: 1px solid;
+}
+
+.precio {
+    margin: 7px;
+}
+button {
+    background-color:black;
+    color: white;
+    width:100%;
+    padding: 5px 0px;
+}
+
+button:hover{
+    background: #283048;
+    background: -webkit-linear-gradient(to right, #859398, #283048); 
+    background: linear-gradient(to right, #859398, #283048); 
+}
+
+button:focus {
+    background: #1f4037; 
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+img {
+    width: 9em;
+    height: 8em;
+}
+
+footer {
+    grid-area: footer-area;
+    height: 10vh;
+    background-color: black;
+    color: rgb(254, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
